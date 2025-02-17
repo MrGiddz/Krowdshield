@@ -1,0 +1,1 @@
+## In this solution, I made use of AbortController to make sure that the request are controlled so that it can be cancelled when the component is unmounted while the request is still being processed or when the user requests cancellation
