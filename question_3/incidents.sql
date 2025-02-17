@@ -54,6 +54,9 @@ VALUES ('Armed robbery in progress', 'A robbery is taking place at Location A.',
 ('Illegal parking', 'A car was parked illegally at Location QQ.', 'Location QQ', 'Reporter QQ', NOW() - INTERVAL '1 day' * (FLOOR(RANDOM() * 31))),
 ('Car theft in progress', 'A car is being stolen at Location RR.', 'Location RR', 'Reporter RR', NOW() - INTERVAL '1 day' * (FLOOR(RANDOM() * 31)));
 
+
+-- This is the query string
+
 SELECT * FROM incidents WHERE created_at >= NOW() - INTERVAL '7 days'
 ORDER BY created_at DESC
 LIMIT 10;
