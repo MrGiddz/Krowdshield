@@ -1,0 +1,8 @@
+POST http://localhost:9600/api/incidents
+Content-Type: application/json
+
+{
+    "title": "Robbery at XYZ Street",
+    "description": "A robbery occurred at 10 PM.",
+    "location": "XYZ Street, Lagos"
+}
